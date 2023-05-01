@@ -81,13 +81,16 @@ function init_schedule() {
 };
 
 function get_event_color(evt) {
-  if (evt['work'] == 'Kantoor') {
+  if (evt['work'] == 'Kantoor' || evt['work'] == 'kantoor' ) {
     return ['#a6bfbd', '#c4d4d3']
   }
   if (evt['vessel'] == 'Arca') {
     return ['#f7c955', '#f9d780']
   } else if (evt['vessel'] == 'Zirfaea') {
     return ['#d6b643', '#dec467']
+  }
+  if (evt['work'] == 'Afwezig') {
+    return ['#f0dadc', '#f4e5e7']
   }
   else {
     return ['#d5674c', null]
@@ -134,9 +137,11 @@ function update_dp_events() {
         backColor: colors[1]
       });
 
-      if(!(event['work'] == 'Afwezig')){
-        window.dp.events.add(e)
-      }
+      // if(!(event['work'] == 'Afwezig')){
+      //   window.dp.events.add(e)
+      // }
+
+      window.dp.events.add(e)
 
       iii = iii + 1
     })
