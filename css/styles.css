@@ -352,6 +352,14 @@ p .emph {
   padding: 0px;
 }
 
+#ais-arca .content-light {
+  padding: 0px;
+}
+
+#ais-zirfaea .content-light {
+  padding: 0px;
+}
+
 #loader {
   margin-bottom: 4rem;
 }
@@ -409,6 +417,14 @@ p .emph {
 }
 
 #notes {
+  padding-top: 2em;
+}
+
+#ais-arca {
+  padding-top: 2em;
+}
+
+#ais-zirfaea {
   padding-top: 2em;
 }
 
