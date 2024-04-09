@@ -38,6 +38,7 @@ function init_schedule() {
 
   dp.theme = 'albirdashboard'
   dp.startDate = firstDayOfWeek(new Date(), -60);
+  dp.endDate = new Date(2025, 0, 10);
   dp.days = 1200;
   dp.scale = "Day";
   dp.cellWidth = 45;
