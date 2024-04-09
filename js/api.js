@@ -166,6 +166,7 @@ main_loader = $('#loader')
 $( document ).ready( async function() {
     console.log( "ready!" );
     window.data = await fetch_data()
+    console.log('window.data fetched:')
     console.log(window.data)
     init_schedule()
     main_loader.slideUp()
