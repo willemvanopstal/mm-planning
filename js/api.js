@@ -150,7 +150,7 @@ function update_dp_events() {
   }
 
   console.log('max date: ', max_date)
-  window.dp.endDate = max_date
+  window.dp.endDate = new DayPilot.Date(max_date).addDays(7);
 
   // Object.values(window.data['vessels']).forEach( vessel => {
   //   console.log(vessel)
