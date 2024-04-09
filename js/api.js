@@ -120,7 +120,7 @@ function update_dp_events() {
     })
   }
 
-  var max_date = None;
+  var max_date = new Date('1999-1-1');
   for (const [surveyor, events] of Object.entries(window.data['surveyors'])) {
     // console.log(surveyor, events)
     var iii = 0
@@ -149,7 +149,7 @@ function update_dp_events() {
     })
   }
 
-  console.log(max_date)
+  console.log('max date: ', max_date)
   window.dp.endDate = max_date
 
   // Object.values(window.data['vessels']).forEach( vessel => {
