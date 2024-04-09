@@ -143,7 +143,7 @@ function update_dp_events() {
       // }
 
       window.dp.events.add(e)
-      max_date = Math.max(new Date(event['end']).addDays(7));
+      max_date = Math.max(new Date(event['end']));
 
       iii = iii + 1
     })
