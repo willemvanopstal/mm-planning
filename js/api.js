@@ -149,6 +149,7 @@ function update_dp_events() {
     })
   }
 
+  console.log(max_date)
   window.dp.endDate = max_date
 
   // Object.values(window.data['vessels']).forEach( vessel => {
