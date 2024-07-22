@@ -66,6 +66,7 @@ function init_schedule() {
       {name: "Mark", id: "Mark"},
       {name: "Robin", id: "Robin"},
       {name: "Bert", id: "Bert"},
+      {name: "Axelle", id: "Axelle"},
       {name: "Willem", id: "Willem"},
   ];
 
